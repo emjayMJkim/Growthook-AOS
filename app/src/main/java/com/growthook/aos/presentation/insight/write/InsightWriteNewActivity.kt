@@ -73,10 +73,10 @@ class InsightWriteNewActivity : BaseActivity<ActivityInsightWriteNewBinding>({
                 seedUrl = seed?.url.toString()
 
 
-                if (seedSource == "null" && seedUrl.isNullOrEmpty()) {
+                if (seedSource.isNullOrEmpty() && seedUrl.isNullOrEmpty()) {
                     clInsightWriteNewContentChip.visibility = View.GONE
                 } else {
-                    if (seedSource == "null") {
+                    if (seedSource.isNullOrEmpty()) {
                         dividerInsightWriteNewThird.visibility = View.GONE
                         tvInsightWriteNewContentChipTitle.visibility = View.GONE
                     } else {

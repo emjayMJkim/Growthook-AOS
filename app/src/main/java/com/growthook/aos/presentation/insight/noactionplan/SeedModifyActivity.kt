@@ -72,7 +72,7 @@ class SeedModifyActivity : BaseActivity<ActivitySeedModifyBinding>({
             with(viewModel) {
                 setInsightModify(seedInfo.insight)
                 setMemoModify(seedInfo.memo ?: "")
-                setSourceModify(seedInfo.source)
+                setSourceModify(seedInfo.source ?: "")
                 setUrlModify(seedInfo.url ?: "")
                 originCave.value = seedInfo.cave
                 setCaveModify(seedInfo.cave)

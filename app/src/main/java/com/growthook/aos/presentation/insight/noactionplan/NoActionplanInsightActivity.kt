@@ -59,10 +59,10 @@ class NoActionplanInsightActivity :
                     tvNoactionInsightMemo.text = seed.content
                 }
 
-                if (seedSource == "null" && seedUrl.isNullOrEmpty()) {
+                if (seedSource.isNullOrEmpty() && seedUrl.isNullOrEmpty()) {
                     clNoactionInsightContentChip.visibility = View.GONE
                 } else {
-                    if (seedSource == "null") {
+                    if (seedSource.isNullOrEmpty()) {
                         dividerNoactionInsightThird.visibility = View.GONE
                         tvNoactionInsightContentChipTitle.visibility = View.GONE
                     } else {

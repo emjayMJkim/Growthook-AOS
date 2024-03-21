@@ -27,7 +27,7 @@ class InsightWriteViewModel @Inject constructor(
     val memo: LiveData<String>
         get() = _memo
 
-    private val _source: MutableLiveData<String> = MutableLiveData()
+    private val _source: MutableLiveData<String> = MutableLiveData("")
     val source: LiveData<String>
         get() = _source
 
